@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_clothes3
 def func1():
   M, N = map(int, input().split(' '))
   if M >= N:
@@ -9,8 +10,8 @@ def func2():
   M, N = map(int, input().split(' '))
   print(0 if N > M else M - N)
 
-def func3()
-  message = lambda m, n: ((m - n)(0))[n > m]
+def func3():
+  message = lambda m, n: ((m - n),(0))[n > m]
   M, N = map(int, input().split(' '))
   print(message(M, N))
 

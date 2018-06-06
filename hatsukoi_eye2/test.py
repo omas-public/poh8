@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye2
 def func1():
   s, n = map(int, input().split())
   if s >= n:

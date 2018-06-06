@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_special2
 def func1():
   n, m = map(int, input().split(' '))
   s, t = [input() for _ in range(2)]
@@ -28,7 +29,7 @@ def func3():
   print(sum(filter(lambda v: v > 0
     , [len(t.split(c)) - len(s.split(c)) for c in set(t)])))
 
-def func4():
+def func5():
   def count_char(word):
     dic = {}
     for c in word:
@@ -54,7 +55,7 @@ def func4():
   
   print(count)
 
-def func5():
+def func6():
   from collections import Counter
   n, m = map(int, input().split(' '))
   s, t = [input() for _ in range(2)]
@@ -70,6 +71,12 @@ def func5():
     
   print(count)
 
+def func6():
+  from collections import Counter
+  n, m = map(int, input().split(' '))
+  s, t = [input() for _ in range(2)]
+  print(sum((Counter(t) - Counter(s)).values()))
+
 
 if __name__ == '__main__':
-  func2()
+  func6()

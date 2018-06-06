@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_special5
 def func1():
   n, m = [int(input()) for _ in range(2)]
 

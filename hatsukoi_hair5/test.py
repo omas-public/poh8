@@ -1,10 +1,11 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair5
 def func1():
   s, t = [int(input()) for _ in range(2)]
   for i in range(s):
     if i == t - 1:
-      print('+', end='')
+#      print('+', end='')
     else:
-      print('-', end='')
+#      print('-', end='')
 
 def func2():
   s, t = [int(input()) for _ in range(2)]
@@ -23,7 +24,6 @@ def func4():
   array[t - 1] = '+'
   print(''.join(array))
   
-def func5():
 
 
 if __name__ == '__main__':

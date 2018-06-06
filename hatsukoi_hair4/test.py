@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair4
 def func1():
   count = 0
 

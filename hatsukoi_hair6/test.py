@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair6
 # for と ifを使った普通のパターン
 def func1():
   n, m = [int(input()) for _ in range(2)]

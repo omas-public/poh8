@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_clothes2
 def func1():
   n, m = map(int, input().split(' '))
   if m % n == 0:

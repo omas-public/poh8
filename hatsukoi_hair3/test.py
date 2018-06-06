@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair3
 def func1():
   n = int(input())
   if n % 7 == 0:

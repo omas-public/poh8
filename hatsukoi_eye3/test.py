@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye3
 def func1():
   p = int(input())
   bp = p // 100

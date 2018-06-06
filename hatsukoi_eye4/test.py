@@ -1,3 +1,4 @@
+# https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye4
 def func1():
   N = int(input())
   alist = list(map(int, input().split(' ')))[:N]
