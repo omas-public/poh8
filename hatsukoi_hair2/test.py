@@ -11,7 +11,7 @@ def func2(n, s):
   for _ in range(int(n)):
     print(s)
 
-def func3():
+def func3(n, s):
   # 文字を掛け算して、最後の改行を抑制
   print((s + '\n') * int(n), end = '')
 
