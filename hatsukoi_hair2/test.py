@@ -1,5 +1,5 @@
 # https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair2
-def func1(n, x):
+def func1(n, s):
   # loopを使ってPrint
   count = 0
   while count < int(n):
