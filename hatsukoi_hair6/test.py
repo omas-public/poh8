@@ -1,8 +1,6 @@
 # https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair6
 # for と ifを使った普通のパターン
-def func1():
-  n, m = [int(input()) for _ in range(2)]
-  ts   = [int(input()) for _ in range(m)]
+def func1(n, m, ts):
 
   remain_sec = n * 60
   music_count= 0
@@ -14,15 +12,13 @@ def func1():
       music_count += 1
     else:
       break
-  
+
   if music_count == m:
     print('OK')
   else:
     print(music_count)
 
-def func2():
-  n, m = [int(input()) for _ in range(2)]
-  ts   = [int(input()) for _ in range(m)]
+def func2(n, m, ts):
 
   remain_sec = n * 60
   music_count= 0
@@ -32,28 +28,25 @@ def func2():
       remain_sec -= ts[index]
       music_count += 1
       index += 1
-    else: 
+    else:
       break
 
-  print(((music_count),('OK'))[music_count == m])
+  print((str((music_count)),('OK'))[music_count == m])
 
-def func3():
-  n, m = [int(input()) for _ in range(2)]
-  ts   = [int(input()) for _ in range(m)]
-
-  class Remain_Sec:
+def func3(n, m, ts):
+  class Sec:
     def __init__(self, time):
       self.time = time
     def update(self, t):
       self.time -= t
       return self.time >= 0
-  
-  remain_sec = Remain_Sec(n * 60)
+
+  remain_sec = Sec(n * 60)
   music_count = len(list(filter(remain_sec.update, ts)))
-  print(((music_count),('OK'))[music_count == m])
+  return ((str(music_count)),('OK'))[music_count == m]
 
 
-def func4():
+def func4(n, m, ts):
   def is_enough(rest):
     def inner(sec):
         nonlocal rest
@@ -61,24 +54,24 @@ def func4():
         return rest >= 0
     return inner
 
-  n, m = [int(input()) for _ in range(2)]
-  ts   = [int(input()) for _ in range(m)]
-
   music_count = len(list(filter(is_enough(n * 60), ts)))
-  print(((music_count),('OK'))[music_count == m])
+  return ((str(music_count)),('OK'))[music_count == m]
 
-def func5():
+def func5(n, m, ts):
   def gen(rest, list):
     for time in list:
       if rest >= time:
         rest -= time
       yield rest >= 0
 
-  n, m = [int(input()) for _ in range(2)]
-  ts   = [int(input()) for _ in range(m)]
   music_count = len(list(gen(n * 60, ts)))
-  print(((music_count),('OK'))[music_count == m])
+  return ((music_count),('OK'))[music_count == m]
 
+def display(s):
+  print(s)
 
 if __name__ == '__main__':
-  func5()
+  n, m = [int(input()) for _ in range(2)]
+  ts   = [int(input()) for _ in range(m)]
+
+  display(func5(n, m, ts))

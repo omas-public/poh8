@@ -1,44 +1,37 @@
 # https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye4
-def func1():
-  N = int(input())
-  alist = list(map(int, input().split(' ')))[:N]
-  
+def func1(N, alist):
   for i in range(N - 1, 0, -1):
     for j in range(i):
       if alist[j] > alist[j + 1]:
         tmp = alist[j + 1]
         alist[j + 1] = alist[j]
         alist[j] = tmp
+  return  alist[N // 2]
 
-def func2():
-  N = int(input())
-  alist = list(map(int, input().split(' ')))[:N]
-  
+
+def func2(N, alist):
   for i in range(N - 1, 0, -1):
     for j in range(i):
       if alist[j] > alist[j + 1]:
         alist[j + 1], alist[j] = alist[j], alist[j + 1]
+  return alist[N // 2]
 
-  print(alist[N // 2])
-
-def func3():
-  N = int(input())
-  alist = list(map(int, input().split(' ')))[:N]
-  
+def func3(N, alist):
   alist.sort()
-  print(alist[N // 2])
+  return(alist[N // 2])
 
-def func4():
-  N = int(input())
-  alist = list(map(int, input().split(' ')))[:N]
-  
-  print(sorted(alist)[N // 2])
+def func4(N, alist):
+  return sorted(alist)[N // 2]
 
-def func5():
+def func5(alist):
   from statistics import median
-  N = int(input())
-  alist = list(map(int, input().split(' ')))[:N]
-  print(median(alist))
+  return median(alist)
+
+def display(n):
+  print(n)
+
 
 if __name__ == '__main__':
-  func5()
+  N = int(input())
+  alist = list(map(int, input().split(' ')))[:N]
+  display(func5(alist))
