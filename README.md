@@ -7,7 +7,7 @@
 Hair
 ----
 
-###  [ショートヘア](hatsukoi_hair2/test.py, "ショートヘアセット")
+###  [ショートヘア](hatsukoi_hair2/test.py "ショートヘアセット")
 
 ``` python
 N, S = int(input()), input()
@@ -16,7 +16,7 @@ N, S = int(input()), input()
 print(N, S)
 ```
 
-### [ロングヘア](hatsukoi_hair3/test.py, "ロングヘアセット")
+### [ロングヘア](hatsukoi_hair3/test.py "ロングヘアセット")
 
 ``` python
 N = int(input())
@@ -34,7 +34,7 @@ for [d, e] in [input().split() for _ in range(5)]:
 
 ```
 
-### [ツインテール](hatsukoi_hair5/test.py,"ツインテールセット")
+### [ツインテール](hatsukoi_hair5/test.py "ツインテールセット")
 
 ``` python
 [s, t] = [int(input()) for _ in range(2)]
@@ -43,7 +43,7 @@ for [d, e] in [input().split() for _ in range(5)]:
 print(s, t)
 ```
 
-### [おさげ](hatsukoi_hair6/test.py, "おさげ")
+### [おさげ](hatsukoi_hair6/test.py "おさげ")
 
 ``` python
 [n, m] = [int(input()) for _ in range(2)]
@@ -58,7 +58,7 @@ for t in ts:
 EYE
 ---
 
-### [たれ目](hatsukoi_eye2/test.py, "たれ目")
+### [たれ目](hatsukoi_eye2/test.py "たれ目")
 
 ``` python
 [s, n] = [int(_) for _ in input().split()]
@@ -67,7 +67,7 @@ EYE
 print(s, t)
 ```
 
-### [つり目](hatsukoi_eye3/test.py, "つり目")
+### [つり目](hatsukoi_eye3/test.py "つり目")
 
 ``` python
 p = int(input())
@@ -77,7 +77,7 @@ print(p)
 
 ```
 
-### [めがね](hatsukoi_eye4/test.py, "めがね")
+### [めがね](hatsukoi_eye4/test.py "めがね")
 
 ``` python
 N = int(input())
@@ -90,7 +90,7 @@ for a in alist:
 
 CLOTHES
 -------
-### [cute衣装](hatsukoi_clothes2/test.py, "Cute衣装")
+### [cute衣装](hatsukoi_clothes2/test.py "Cute衣装")
 
 ``` python
 [n, m] = [int(_) for _ in input().split()]
@@ -99,7 +99,7 @@ CLOTHES
 print(n, m)
 ```
 
-### [sexy衣装](hatsukoi_clothes3/test.py, "Sexy衣装")
+### [sexy衣装](hatsukoi_clothes3/test.py "Sexy衣装")
 
 ``` python
 [N, M] = [int(_) for _ in input().split()]
@@ -108,7 +108,7 @@ print(n, m)
 print(N, M)
 ```
 
-### [制服](hatsukoi_clothes5/test.py, "制服")
+### [制服](hatsukoi_clothes5/test.py "制服")
 
 ``` python
 cs = input().split()
@@ -119,7 +119,7 @@ for c in cs:
 
 ```
 
-### [浴衣](hatsukoi_clothes6/test.py, "浴衣")
+### [浴衣](hatsukoi_clothes6/test.py "浴衣")
 
 ``` python
 N = int(input())
@@ -134,7 +134,7 @@ for [t, s] in ts:
 SPECIAL
 -------
 
-### [水着](hatsukoi_special2/test.py, "水着")
+### [水着](hatsukoi_special2/test.py "水着")
 
 ``` python
 [n, m] = map(int, input().split())
@@ -144,7 +144,7 @@ SPECIAL
 print(n, m, s, t)
 ```
 
-### [マイク](hatsukoi_special5/test.py, "マイク")
+### [マイク](hatsukoi_special5/test.py "マイク")
 
 ``` python
 [n, m] = [int(input()) for _ in range(2)]
@@ -153,7 +153,7 @@ print(n, m, s, t)
 print(n, m)
 ```
 
-### [カチューシャ](hatsukoi_special6/test.py, "カチューシャ")
+### [カチューシャ](hatsukoi_special6/test.py "カチューシャ")
 
 ```
 [[n, p], [m, q]] = [map(int, input().split()) for _ in range(2)]
