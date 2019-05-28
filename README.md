@@ -25,7 +25,7 @@ N = int(input())
 print(N)
 ```
 
-### [ポニーテイル](hatsukoi_hair4/test.py,"ポニーテールセット")
+### [ポニーテイル](hatsukoi_hair4/test.py　"ポニーテールセット")
 
 ``` python
 for [d, e] in [input().split() for _ in range(5)]:
@@ -64,7 +64,7 @@ EYE
 [s, n] = [int(_) for _ in input().split()]
 
 # 確認用
-print(s, t)
+print(s, n)
 ```
 
 ### [つり目](hatsukoi_eye3/test.py "つり目")
