@@ -67,6 +67,13 @@ def func5(n, m, ts):
   music_count = len(list(gen(n * 60, ts)))
   return ((music_count),('OK'))[music_count == m]
 
+def func6(n, m, ts):
+  import itertools as itr
+  remain_sec = n * 60
+  music_count = len(list(itr.takewhile(lambda t: t < remain_sec, itr.accumulate(ts))))
+
+  return ((music_count),('OK'))[music_count == m]
+
 def display(s):
   print(s)
 
@@ -74,4 +81,4 @@ if __name__ == '__main__':
   n, m = [int(input()) for _ in range(2)]
   ts   = [int(input()) for _ in range(m)]
 
-  display(func5(n, m, ts))
+  display(func6(n, m, ts))
