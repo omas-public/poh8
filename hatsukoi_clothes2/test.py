@@ -8,10 +8,10 @@ def func1(n, m):
 def func2(n, m):
   print('ok' if m % n == 0 else 'ng')
 
-def func3():
+def func3(n, m):
   return 'ng' if m % n else 'ok'
 
-def func4():
+def func4(n, m):
   from numpy import mod
   message = lambda pred: (('ng'), ('ok'))[pred]
   return message(mod(m, n) == 0)
