@@ -1,31 +1,71 @@
 
-[恋するハッカソン〜君色に染まるアイドル〜](https://paiza.jp/poh/hatsukoi)
-=========================================================================
+# [恋するハッカソン〜君色に染まるアイドル〜](https://paiza.jp/poh/hatsukoi)
 
 ![poh8](poh8.png)
 
-Hair
-----
+## Hair
 
-###  [ショートヘア](hatsukoi_hair2/test.py "ショートヘアセット")
+### [ショートヘア](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair2)
 
-``` python
+python3
+[解答例](./hatsukoi_hair2/test.py "ショートヘアセット")
+
+```python
 N, S = int(input()), input()
 
 # 確認用
 print(N, S)
 ```
 
-### [ロングヘア](hatsukoi_hair3/test.py "ロングヘアセット")
+javascript
+[解答例](./hatsukoi_hair2/test.js "ショートヘアセット")
 
-``` python
+```js
+
+// stream to array
+const lines = require('fs').readFileSync('/dev/stdin', 'utf8')
+  .toString().trim().split('\n')
+
+// declare variable
+const [N, S] = [parseInt(lines[0], 10), lines[1]]
+
+// Main 
+// console.log(`N:${N}, S:${S}`)
+
+```
+
+### [ロングヘア](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair3)
+
+python3
+[解答例](hatsukoi_hair3/test.py "ロングヘアセット")
+
+```python
 N = int(input())
 
 # 確認用
 print(N)
 ```
 
-### [ポニーテイル](hatsukoi_hair4/test.py　"ポニーテールセット")
+javascript
+[解答例](hatsukoi_hair3/test.js "ロングヘアセット")
+
+```js
+// stream to array
+const lines = require('fs').readFileSync('/dev/stdin', 'utf8')
+  .toString().trim().split('\n')
+
+// declare variable
+const N = parseInt(lines[0], 10)
+
+// Main 
+//console.log(`N:${N}`)
+
+```
+
+### [ポニーテイル](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair4)
+
+python3
+[解答例](hatsukoi_hair4/test.py　"ポニーテールセット")
 
 ``` python
 for [d, e] in [input().split() for _ in range(5)]:
@@ -34,7 +74,28 @@ for [d, e] in [input().split() for _ in range(5)]:
 
 ```
 
-### [ツインテール](hatsukoi_hair5/test.py "ツインテールセット")
+javascript
+[解答例](hatsukoi_hair4/test.js　"ポニーテールセット")
+
+```js
+// stream to array
+const lines = require('fs').readFileSync('/dev/stdin', 'utf8')
+  .toString().trim().split('\n')
+
+// main
+let count = 0 
+for (const [d, e] of lines) {
+  // console.log(`d:${d}, e:${e}`)
+  // カウントする
+}
+// OKかNGを出力する
+
+```
+
+### [ツインテール](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair5)
+
+python3
+[解答例](hatsukoi_hair5/test.py "ツインテールセット")
 
 ``` python
 [s, t] = [int(input()) for _ in range(2)]
@@ -43,9 +104,27 @@ for [d, e] in [input().split() for _ in range(5)]:
 print(s, t)
 ```
 
-### [おさげ](hatsukoi_hair6/test.py "おさげ")
+javascript
+[解答例](hatsukoi_hair5/test.js "ツインテールセット")
 
-``` python
+```js
+// stream to array
+const lines = require('fs').readFileSync('/dev/stdin', 'utf8')
+  .toString().trim().split('\n')
+
+const [s, t] = Array.from(lines, Number)
+
+// main
+// console.log(`s:${s}, t:${t}`)
+
+```
+
+### [おさげ](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_hair6)
+
+python3
+[解答例](hatsukoi_hair6/test.py)
+
+```python
 [n, m] = [int(input()) for _ in range(2)]
 ts = [int(input()) for _ in range(m)]
 
@@ -55,10 +134,28 @@ for t in ts:
   print(t)
 ```
 
-EYE
----
+javascript
+[解答例](hatsukoi_hair6/test.js)
 
-### [たれ目](hatsukoi_eye2/test.py "たれ目")
+```js
+// stream to array
+const lines = require('fs').readFileSync('/dev/stdin', 'utf8')
+  .toString().trim().split('\n')
+// declare variable
+const [n, m] = Array.from(lines.slice(0, 2), Number)
+const tx = Array.from(lines.slice(2), Number)
+
+// main
+//console.log(`n:${n}, m:${m}, tx:[${tx}]`)
+
+```
+
+## EYE
+
+### [たれ目](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye2)
+
+python3
+[解答例](hatsukoi_eye2/test.py "たれ目")
 
 ``` python
 [s, n] = [int(_) for _ in input().split()]
@@ -67,17 +164,33 @@ EYE
 print(s, n)
 ```
 
-### [つり目](hatsukoi_eye3/test.py "つり目")
+javascript
+[解答例](hatsukoi_eye2/test.js "たれ目")
 
-``` python
+```js
+```
+
+### [つり目](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye3)
+
+python3
+[解答例](hatsukoi_eye3/test.py "つり目")
+
+```python
 p = int(input())
 
 # 確認用
 print(p)
-
 ```
 
-### [めがね](hatsukoi_eye4/test.py "めがね")
+javascript
+[解答例](hatsukoi_eye3/test.py "つり目")
+
+```js
+```
+
+### [めがね](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_eye4)
+
+[解答例](hatsukoi_eye4/test.py "めがね")
 
 ``` python
 N = int(input())
@@ -88,9 +201,18 @@ for a in alist:
   print(a)
 ```
 
-CLOTHES
--------
-### [cute衣装](hatsukoi_clothes2/test.py "Cute衣装")
+javascript
+[解答例](hatsukoi_eye4/test.py "めがね")
+
+```js
+```
+
+## CLOTHES
+
+### [cute衣装](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_clothes2)
+
+python3
+[解答例](hatsukoi_clothes2/test.py "Cute衣装")
 
 ``` python
 [n, m] = [int(_) for _ in input().split()]
@@ -99,7 +221,10 @@ CLOTHES
 print(n, m)
 ```
 
-### [sexy衣装](hatsukoi_clothes3/test.py "Sexy衣装")
+### [sexy衣装](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_clothes3)
+
+Python3
+[解答例](hatsukoi_clothes3/test.py "Sexy衣装")
 
 ``` python
 [N, M] = [int(_) for _ in input().split()]
@@ -108,7 +233,10 @@ print(n, m)
 print(N, M)
 ```
 
-### [制服](hatsukoi_clothes5/test.py "制服")
+### [制服](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_clothes5)
+
+python3
+[解答例](hatsukoi_clothes5/test.py "制服")
 
 ``` python
 cs = input().split()
@@ -119,7 +247,10 @@ for c in cs:
 
 ```
 
-### [浴衣](hatsukoi_clothes6/test.py "浴衣")
+### [浴衣](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_clothes6)
+
+python3
+[解答例](hatsukoi_clothes6/test.py "浴衣")
 
 ``` python
 N = int(input())
@@ -131,10 +262,12 @@ for [t, s] in ts:
 
 ```
 
-SPECIAL
--------
+## SPECIAL
 
-### [水着](hatsukoi_special2/test.py "水着")
+### [水着](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_special2)
+
+python3
+[解答例](hatsukoi_special2/test.py "水着")
 
 ``` python
 [n, m] = map(int, input().split())
@@ -144,7 +277,14 @@ SPECIAL
 print(n, m, s, t)
 ```
 
-### [マイク](hatsukoi_special5/test.py "マイク")
+javascript
+[解答例](hatsukoi_special2/test.js "水着")
+
+
+### [マイク](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_special5)
+
+python3
+[解答例](hatsukoi_special5/test.py "マイク")
 
 ``` python
 [n, m] = [int(input()) for _ in range(2)]
@@ -153,12 +293,27 @@ print(n, m, s, t)
 print(n, m)
 ```
 
-### [カチューシャ](hatsukoi_special6/test.py "カチューシャ")
+javascript
+[解答例](hatsukoi_special5/test.js "マイク")
 
+```js
 ```
+
+### [カチューシャ](https://paiza.jp/poh/hatsukoi/challenge/hatsukoi_special6)
+
+python3
+[解答例](hatsukoi_special6/test.py "カチューシャ")
+
+```py
 [[n, p], [m, q]] = [map(int, input().split()) for _ in range(2)]
 
 # 確認
 print(n, p, m, q)
 
+```
+
+javascript
+[解答例](hatsukoi_special6/test.js "カチューシャ")
+
+```js
 ```
