@@ -3,10 +3,10 @@ def func1(p):
   bp = p // 100
   if p >= 1000:
     bp += 10
-  print(bp)
+  return bp
 
 def func2(p):
-  return p // 100 + 10 if p >= 1000 else 0
+  return p // 100 + (10 if p >= 1000 else 0)
 
 def func3(p):
   return p // 100 + ((0), (10))[p >= 1000]
@@ -14,7 +14,7 @@ def func3(p):
 def func4(p):
   bp1 = lambda p: p // 100
   bp2 = lambda p: ((0), (10))[p >= 1000]
-  get_bonus = lambda p: bp1 + bp2
+  get_bonus = lambda p: bp1(p) + bp2(p)
   return get_bonus(p)
 
 def display(n):
