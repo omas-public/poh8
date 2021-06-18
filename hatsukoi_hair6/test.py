@@ -7,16 +7,15 @@ def func1(n, m, ts):
 
   for t in ts:
     if t < remain_sec:
-      print(music_count ,t, remain_sec)
       remain_sec -= t
       music_count += 1
     else:
       break
 
   if music_count == m:
-    print('OK')
+    return 'OK'
   else:
-    print(music_count)
+    return music_count
 
 def func2(n, m, ts):
 
@@ -31,7 +30,7 @@ def func2(n, m, ts):
     else:
       break
 
-  print((str((music_count)),('OK'))[music_count == m])
+  return (str((music_count)),('OK'))[music_count == m]
 
 def func3(n, m, ts):
   class Sec:
@@ -62,7 +61,7 @@ def func5(n, m, ts):
     for time in list:
       if rest >= time:
         rest -= time
-      yield rest >= 0
+        yield rest >= 0
 
   music_count = len(list(gen(n * 60, ts)))
   return ((music_count),('OK'))[music_count == m]
