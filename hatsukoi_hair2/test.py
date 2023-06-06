@@ -22,7 +22,7 @@ def func4(n, s):
 
 def func5(n, s):
   # listを掛け算
-  return [s] * int(n)
+  return '\n'.join([s] * int(n))
 
 def display(l):
   print('\n'.join(l))
