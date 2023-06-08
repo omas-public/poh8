@@ -68,9 +68,9 @@ python3
 [解答例](hatsukoi_hair4/test.py　"ポニーテールセット")
 
 ``` python
-for [d, e] in [input().split() for _ in range(5)]:
+matrix = [(d,e) for [d, e] in [input().split() for _ in range(5)]]
   # 確認用
-  print(d, e)
+print(matrix)
 
 ```
 
@@ -130,8 +130,7 @@ ts = [int(input()) for _ in range(m)]
 
 # 確認用
 print(n)
-for t in ts:
-  print(t)
+print(ts)
 ```
 
 javascript
