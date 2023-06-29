@@ -36,14 +36,11 @@ def test2():
             ,(map(thermometor({'none':0, 'out': 3, 'in': 5}), actions)))))
 
 def test3():
-  def thermometor(default = 0):
-    temp = default
-    def exec(degrees):
-      nonlocal temp
-      temp = max(temp - 1, 0)
-      temp += degrees
-      return temp
-    return exec
+  def thermometor(acc = 0):
+      def exec(degree):
+          nonlocal acc
+          return (acc := (max(acc - 1, 0) + degree))
+      return exec
 
   calc_cost = lambda temp: 1 if temp == 0 else 2
 
