@@ -70,6 +70,30 @@ def test4():
                 if str(i) in log else v for i, v in enumerate([0] * 24)], 0)
   print(cost)
 
+def test5():
+  def thermometor(cool = 1, acc = 0):
+      def exec(degree):
+          nonlocal acc
+          return (acc := (max(acc - cool, 0) + degree))
+      return exec
+  
+  
+  def create_log(matrix):
+      log_24 = dict([str(key), value] for key, value in enumerate([0] * 24))
+      return list(map(thermometor(), {**log_24, **dict(matrix)}.values()))
+  
+  
+  def calc_cost(log):
+      return sum([2 if t > 0 else 1 for t in log])
+  
+  
+  action_table = {'in': 5, 'out': 3}
+  matrix = [[hour, action_table.get(command)] 
+              for hour, command in [input().split(' ') for _ in range(int(input()))]]
+  
+  result = calc_cost(create_log(matrix))
+  print(result)
+
 
 
 if __name__ == '__main__':
